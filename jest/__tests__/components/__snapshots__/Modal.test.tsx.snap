@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal Should match snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-1054lpv"
+    id="test-test-modal-container"
+  >
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-2yvvac-MuiTypography-root"
+      id="test-test-modal-title-word-0"
+    >
+      Test 
+    </p>
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-2yvvac-MuiTypography-root"
+      id="test-test-modal-title-word-1"
+    >
+      Test
+    </p>
+    <div
+      class="MuiBox-root css-j4gqgf"
+      id="test-test-modal-notification-container"
+    />
+    <div
+      class="MuiBox-root css-1knh30t"
+      id="test-test-modal-form"
+    >
+      <div>
+        Children
+      </div>
+    </div>
+  </div>
+</div>
+`;

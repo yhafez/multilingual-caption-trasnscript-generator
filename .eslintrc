@@ -1,0 +1,71 @@
+{
+	"env": {
+		"shared-node-browser": true,
+		"es2022": true,
+		"jest": true,
+		"node": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:@typescript-eslint/strict",
+		"next/core-web-vitals",
+		"prettier"
+	],
+	"overrides": [
+		{
+			"files": ["./lib/prisma.ts"],
+			"rules": {
+				"no-var": "off"
+			}
+		}
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true,
+			"impliedStrict": true
+		},
+		"project": "./tsconfig.json"
+	},
+	"plugins": ["react", "@typescript-eslint"],
+	"rules": {
+		"react/react-in-jsx-scope": "off",
+		"@typescript-eslint/no-var-requires": "off",
+		"@typescript-eslint/ban-ts-comment": "off",
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/no-non-null-assertion": "off",
+		"@typescript-eslint/no-empty-function": "off",
+		"no-mixed-spaces-and-tabs": "off",
+		"react-hooks/exhaustive-deps": "off",
+		"no-restricted-imports": [
+			"error",
+			{
+				"patterns": ["@mui/*/*/*", "!@mui/material/test-utils/*"]
+			}
+		]
+	},
+	"settings": {
+		"react": { "version": "detect" }
+	},
+	"ignorePatterns": [
+		"node_modules",
+		"config",
+		"dist",
+		"out",
+		"public",
+		"scripts",
+		"src",
+		"test",
+		"tests_playwright",
+		"tests_mocha",
+		"tmp",
+		"vendor",
+		"next.config.js",
+		"storybook-static",
+		".storybook"
+	]
+}
